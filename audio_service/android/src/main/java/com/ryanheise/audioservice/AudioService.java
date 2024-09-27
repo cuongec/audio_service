@@ -571,7 +571,7 @@ public class AudioService extends MediaBrowserServiceCompat {
         if (!wasPlaying && playing) {
             enterPlayingState();
         } else if (wasPlaying && !playing) {
-            exitPlayingState();
+            // exitPlayingState();
         }
 
         if (oldProcessingState != AudioProcessingState.idle && processingState == AudioProcessingState.idle) {
