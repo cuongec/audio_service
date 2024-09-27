@@ -352,6 +352,7 @@ public class AudioService extends MediaBrowserServiceCompat {
     }
 
     public void stop() {
+        exitPlayingState();
         deactivateMediaSession();
         stopSelf();
     }
